@@ -1,8 +1,8 @@
 const artGallery = {
-    1: { title: 'wow im a cool title', author: 'Skibidi Toilet', grade: "6", caption : "hey this is a demo caption just to see how itd look la tee ta tee ta tis i ajklsdfjlkasdljkfajklsdfjlkasdljkfajklsdfjlkasdljkfajklsdfjlkasdljkfajklsdfjlkasdljkf", imageURL: "workTypes/images/BingoPFP.jpg", coverImage: "workTypes/images/BingoPFP.jpg"},
-    2: { title: 'very unique title', author: 'Name One & Name Two', grade: "7 & 8", caption : "hey this is a demo caption just to see how itd look", imageURL: "workTypes/images/dababy.jpg", coverImage: "workTypes/images/dababy.jpg"},
-    3: { title: 'nice art', author: 'I have an uncessarily long name', grade: "8", caption : "hey this is a demo caption just to see how itd look", imageURL: "workTypes/images/fatdog.jpg", coverImage: "workTypes/images/fatdog.jpg"},
-    4: { title: 'egwin my beloved', author: 'Daghan', grade: "6", caption : "this is my egwin hes very cool and this caption is also very cool. also hes a test for cover images being different", imageURL: "workTypes/images/egwin.jpg", coverImage: "workTypes/images/squaresquirrel.jpg"}
+    1: { title: 'wow im a cool title', author: 'Skibidi Toilet', grade: "6", caption : "hey this is a demo caption just to see how itd look la tee ta tee ta tis i ajklsdfjlkasdljkfajklsdfjlkasdljkfajklsdfjlkasdljkfajklsdfjlkasdljkfajklsdfjlkasdljkf", imageURL: "./workTypes/images/BingoPFP.jpg", coverImage: "./workTypes/images/BingoPFP.jpg"},
+    2: { title: 'very unique title', author: 'Name One & Name Two', grade: "7 & 8", caption : "hey this is a demo caption just to see how itd look", imageURL: "./workTypes/images/dababy.jpg", coverImage: "./workTypes/images/dababy.jpg"},
+    3: { title: 'nice art', author: 'I have an uncessarily long name', grade: "8", caption : "hey this is a demo caption just to see how itd look", imageURL: "./workTypes/images/fatdog.jpg", coverImage: "./workTypes/images/fatdog.jpg"},
+    4: { title: 'egwin my beloved', author: 'Daghan', grade: "6", caption : "this is my egwin hes very cool and this caption is also very cool. also hes a test for cover images being different", imageURL: "./workTypes/images/egwin.jpg", coverImage: "./workTypes/images/squaresquirrel.jpg"}
 };
 
 const textGallery = {
