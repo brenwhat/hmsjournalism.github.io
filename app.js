@@ -6,7 +6,8 @@ const artGallery = {
 };
 
 const textGallery = {
-
+    1: { title: 'Example Text 1', author: 'Brennan Wong', grade: "8", caption : "this is a short bit of text made to fill space and see how a text would look in the website.", imageURL: "./workTypes/text/exampletext1.pdf", coverImage: "./workTypes/images/dopecoverimage1.jpg"},
+    2: { title: 'Example Text 2', author: 'Real Person', grade: "6", caption : "this is a short bit of text made to fill space and see how a text would look in the website. but this time i lengthened it for more pages", imageURL: "./workTypes/text/longerexampletext.pdf", coverImage: "./workTypes/images/dopecoverimage2.jpg"},
 };
 
 const hybridGallery = {
@@ -18,21 +19,6 @@ const Galleries = [
   textGallery,
   hybridGallery,
 ];
-
-function pageArt(id) {
-  console.log(id);
-  loadPage(0,id);
-};
-
-function pageText(id) {
-  console.log(id);
-  loadPage(1,id);
-};
-
-function pageHybrid(id) {
-  console.log(id);
-  loadPage(2,id);
-};
 
 function loadPage(type, id) {
   const targetWindow = window.open('gallery.html');
@@ -46,13 +32,13 @@ function loadPage(type, id) {
   };
 };
 
-function fillArt(type, functype) {
+function fillArt(type) {
   const length = Object.keys(Galleries[type]).length;
 
   for (let i=1; i<length+1; i++) {
     console.log((Galleries[type])[i]);
 
-    document.getElementById("gallerygrid").innerHTML += `<div class="artwhole" onclick="loadPage(${functype + ", " + i});"> \
+    document.getElementById("gallerygrid").innerHTML += `<div class="artwhole" onclick="loadPage(${type + ", " + i});"> \
                 <img class="Art" src="${(Galleries[type])[i].coverImage}">    \
                 <div class="captionback">\
                     <p class="title">${(Galleries[type])[i].title}</p>\
