@@ -1,0 +1,182 @@
+* {
+    font-family: outfit;
+}
+
+#indexBody {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul{
+    list-style-type: none;
+    background-color: rgb(247, 71, 71);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.navbar a{
+    color: rgb(36, 36, 36);
+    padding: 15px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    font-size: 2.5rem;
+
+    transition: padding 0.1s ease-out;
+}
+.navbar a:hover{
+    background-color: hsl(0, 75%, 55%);
+}
+.navbar li{
+    float: left;
+}
+
+div.sticky{
+    position: sticky;
+    top: 0px;
+    z-index: 999;
+}
+
+div.thinBody {
+    justify-content: center;
+    width: 50%;
+    border-left: solid gray;
+    border-right: solid gray;
+    word-wrap: break-word;
+}
+
+div.thinBody * {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+img.Art {
+    width: 15rem;
+}
+
+embed.example {
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+}
+
+div.captionback {
+    max-width: 100%;
+}
+
+p.desc {
+    padding-top: 7%;
+    padding-bottom: 7%;
+    font-size: 1.5rem;
+}
+
+div.artwhole {
+    width: 15rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 0.6rem;
+    margin-right: 0.6rem;
+    border-width: 0.2rem;
+    border-style: solid;
+    border-color: hsla(0, 0%, 0%, 0.692);
+    cursor: pointer;
+
+    transition: transform 0.2s ease-out;
+}
+
+div.artwhole:hover {
+    transform: scale(0.99);
+    border-color: gray;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a.title {
+    font-size: 5rem; 
+    font-weight: 400;
+}
+
+a.title:hover {
+    text-decoration: underline;
+}
+
+p {
+    font-size: large;
+    margin: 0;
+    margin-left: 5%;
+    padding-top: 1%;
+    padding-bottom: 5%;
+    text-wrap: wrap;
+}
+
+p.title {
+    margin-top: 0rem;
+    margin-bottom: 1%;
+    padding-bottom: 0;
+    font-size:xx-large;
+}
+
+#gallerygrid {
+    display: flex;
+}
+
+embed.example {
+    width: 10rem;
+    padding-top: 2rem;
+    cursor: pointer;
+}
+
+#gimage {
+    width: 50rem;
+    height: 50rem;
+}
+
+#gtitle {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 1rem;
+    font-size: 7rem;
+}
+
+#gauthor {
+    padding-top: 2%;
+    padding-bottom: 0;
+    font-size: 3rem;
+}
+
+#gcaption {
+    padding-top: 10%;
+    padding-bottom: 0;
+    font-size: 2rem;
+    word-wrap: break-word;
+    color: darkgray;
+}
+
+#gallerydiv {
+    display: flex;
+    justify-content: center;
+}
+
+#innergdiv {
+    width: fit-content;
+    display: grid;
+    justify-content: center;
+    border-left: solid gray;
+    border-right: solid gray;
+}
+
+#gimagediv {
+    grid-column: 1;
+    padding-left: 7rem;
+}
+
+#ginfodiv {
+    grid-column: 2;
+    padding-left: 10%;
+    padding-right: 7rem;
+    width: 40rem;
+}
