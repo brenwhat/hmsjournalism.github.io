@@ -41,7 +41,7 @@ div.sticky{
 
 div.thinBody {
     justify-content: center;
-    width: 50%;
+    width: 70%;
     border-left: solid gray;
     border-right: solid gray;
     word-wrap: break-word;
@@ -132,7 +132,7 @@ embed.example {
 
 #gimage {
     width: 50rem;
-    height: 50rem;
+    min-height: 50rem;
 }
 
 #gtitle {
