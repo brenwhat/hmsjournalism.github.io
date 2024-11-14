@@ -32,7 +32,7 @@ function galleryRefresh() {
   document.getElementById("gimage").src = localStorage.getItem("image") + '#toolbar=0';
   document.getElementById("gtitle").innerHTML = localStorage.getItem("title");
   document.getElementById("gauthor").innerHTML = localStorage.getItem("author") + ', Grade ' + localStorage.getItem("grade");
-  document.getElementById("gcategory").innerHTML = localStorage.getItem("category")
+  document.getElementById("gcategory").innerHTML = localStorage.getItem("category");
   document.getElementById("gcaption").innerHTML = localStorage.getItem("caption");
 }
 
