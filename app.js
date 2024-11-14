@@ -43,7 +43,7 @@ function loadPage(type, id) {
   localStorage.setItem("image", (Galleries[type])[id].imageURL);
   localStorage.setItem("title", (Galleries[type])[id].title);
   localStorage.setItem("author", (Galleries[type])[id].author);
-  localStorage.setItem("category", categories[(Galleries[type])[id].category])
+  localStorage.setItem("category", categories[(Galleries[type])[id].category]);
   localStorage.setItem("grade", (Galleries[type])[id].grade);
   localStorage.setItem("caption", (Galleries[type])[id].caption);
 };
