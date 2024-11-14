@@ -2,6 +2,7 @@
     font-family: outfit;
 }
 
+
 #indexBody {
     display: flex;
     justify-content: center;
@@ -36,7 +37,7 @@
 div.sticky{
     position: sticky;
     top: 0px;
-    z-index: 999;
+    z-index: 100;
 }
 
 div.thinBody {
@@ -65,6 +66,10 @@ div.captionback {
     max-width: 100%;
 }
 
+p.category {
+    color: darkgray;
+}
+
 p.desc {
     padding-top: 7%;
     padding-bottom: 7%;
@@ -75,12 +80,12 @@ div.artwhole {
     width: 15rem;
     margin-top: auto;
     margin-bottom: auto;
-    margin-left: 0.6rem;
-    margin-right: 0.6rem;
+    margin: 0.6rem;
     border-width: 0.2rem;
     border-style: solid;
     border-color: hsla(0, 0%, 0%, 0.692);
     cursor: pointer;
+    display: inline-block;
 
     transition: transform 0.2s ease-out;
 }
@@ -120,8 +125,13 @@ p.title {
     font-size:xx-large;
 }
 
-#gallerygrid {
-    display: flex;
+.gallerycategory {
+    width: 100%;
+    overflow: auto;
+    
+    margin-left: 2vw;
+    margin-right: 2vw;
+
 }
 
 embed.example {
@@ -131,27 +141,34 @@ embed.example {
 }
 
 #gimage {
-    width: 50rem;
-    min-height: 50rem;
+    width: 40vw;
 }
 
 #gtitle {
     padding-top: 0;
     padding-bottom: 0;
     margin-top: 1rem;
-    font-size: 7rem;
+    font-size: xxx-large;
 }
 
 #gauthor {
     padding-top: 2%;
     padding-bottom: 0;
-    font-size: 3rem;
+    font-size: xx-large;
 }
 
 #gcaption {
-    padding-top: 10%;
+    padding-top: 5%;
     padding-bottom: 0;
-    font-size: 2rem;
+    font-size: x-large;
+    word-wrap: break-word;
+    color: darkgray;
+}
+
+#gcategory {
+    padding-top: 7%;
+    padding-bottom: 0;
+    font-size: x-large;
     word-wrap: break-word;
     color: darkgray;
 }
@@ -159,24 +176,37 @@ embed.example {
 #gallerydiv {
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 #innergdiv {
-    width: fit-content;
+    width: 90vw;
     display: grid;
     justify-content: center;
     border-left: solid gray;
     border-right: solid gray;
+    overflow: hidden;
 }
 
 #gimagediv {
     grid-column: 1;
-    padding-left: 7rem;
+    padding-left: auto;
+    padding-right: auto;
 }
 
 #ginfodiv {
     grid-column: 2;
-    padding-left: 10%;
-    padding-right: 7rem;
-    width: 40rem;
+    padding-left: auto;
+    padding-right: auto;
+    width: 40vw;
+}
+
+@media screen and (max-width: 950px) {
+    #ginfodiv {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    #gimage {
+        width: 60vw;
+    }
 }
